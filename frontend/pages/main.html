@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация | Главная страница</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="./../mdb/css/mdb.min.css" />
+</head>
+
+<body class="container">
+    <style>
+        .navbar {
+            border-radius: 20px;
+        }
+
+        footer {
+            border-radius: 20px 20px 0 0;
+        }
+
+        body {
+            background-color: #eeeeee;
+        }
+
+        .personal img {
+            border-radius: 50%;
+            border: 3px solid rgba(0, 0, 0, 0.534);
+        }
+
+        .personal {
+            border-radius: 20px;
+        }
+
+        .docs {
+            background-color: rgba(160, 155, 155, 0.267);
+            border-radius: 20px;
+        }
+    </style>
+    <!-- Navbar -->
+
+    <nav class="navbar container navbar-expand-lg fixed-top shadow-5-strong navbar-light bg-light mt-3 mb-3">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <a class="navbar-brand ms-2" href="./main.html">
+                <i class="fa-brands fa-dochub"></i>
+            </a>
+            <button class="navbar-toggler pe-2" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./main.html"><i
+                                class="fa-solid fa-house me-1"></i>Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html"><i class="fa-solid fa-circle-question me-1"></i>О
+                            Нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html"><i
+                                class="fa-solid fa-square-phone me-1"></i>Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./order.html"><i class="fa-solid fa-square-pen me-1"></i>Услуги</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <section class="mt-5">
+        <div class="p-5 shadow-5-strong text-center bg-image parallax" style="
+            background-image: url('./assets/c60f1136-01a2-4a03-8c9d-784705c344a5.png');
+            border-radius: 20px;
+            height: 500px;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            margin-top: 100px;
+            ">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-white">
+                        <h1 class="mb-3">Документация</h1>
+                        <a class="btn btn-outline-light btn-lg" href="#docs" role="button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Background image -->
+
+    <!-- Персонал -->
+    <section class="mt-5 shadow-5-strong p-4 mb-5 personal">
+        <div class="d-flex justify-content-center mt-3 mb-3">
+            <h2><i class="fa-solid fa-user me-2"></i>Наши профессионалы</h2>
+        </div>
+        <div class="row d-flex justify-content-center row-gap-5">
+            <div
+                class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-around flex-column text-center gap-4">
+                <img src="./assets/1.png" class="img-fluid shadow-5-strong" alt="Romario" />
+                <div class="dec">
+                    <h3>Ромарио</h3>
+                    <h4>Системный архитектор</h4>
+                </div>
+            </div>
+            <div
+                class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-around flex-column text-center gap-4">
+                <img src="./assets/2.png" class="img-fluid shadow-5-strong" alt="Danielo" />
+                <div class="dec">
+                    <h3>Даниэло</h3>
+                    <h4>Технический писатель</h4>
+                </div>
+            </div>
+            <div
+                class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 d-flex justify-content-around flex-column text-center gap-4">
+                <img src="./assets/32.png" class="img-fluid shadow-5-strong" alt="Masimilian" />
+                <div class="dec">
+                    <h3>Рафаэль</h3>
+                    <h4>Сеньёр-помидор</h4>
+                </div>
+            </div>
+            <section>
+
+            </section>
+        </div>
+    </section>
+    <!-- Персонал -->
+
+    <!-- фактишь -->
+    <section id="docs" class="docs shadow-5-strong pt-4 pb-4 mb-5">
+        <div class="d-flex justify-content-center mt-3 mb-3">
+            <h2><i class="fa-solid fa-circle-exclamation me-2"></i>Документация - эта важно?</h2>
+        </div>
+        <div class="row row-gap-5 ps-5 pe-5 pb-5 pt-4">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-around"><img
+                    src="./assets/4.png" class="img-fluid rounded shadow-5-strong" alt="Fact"></div>
+            <div class="col d-flex justify-content-around align-items-center">
+                <ol class="fw-bold fs-5">
+                    <li><i class="fa-solid fa-square-check me-2" style="color: #038d64;"></i>Повышение читаемости и
+                        понимания кода.</li>
+                    <li><i class="fa-solid fa-square-check me-2" style="color: #038d64;"></i>Обеспечение качества и
+                        стандартизации.</li>
+                    <li><i class="fa-solid fa-square-check me-2" style="color: #038d64;"></i>Уменьшение количества
+                        ошибок и багов.</li>
+                    <li><i class="fa-solid fa-square-check me-2" style="color: #038d64;"></i>Упрощение поддержки и
+                        модернизации.</li>
+                    <li><i class="fa-solid fa-square-check me-2" style="color: #038d64;"></i>Снижение зависимости от
+                        конкретных специалистов.</li>
+                    <li><i class="fa-solid fa-square-check me-2" style="color: #038d64;"></i>Повышение безопасности и
+                        защищенности данных.</li>
+            </div>
+    </section>
+    <!-- фактишь -->
+
+    <!-- Подвал -->
+    <footer class="bg-dark shadow-5-strong text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="./main.html">Документация</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Подвал -->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="./../mdb/js/mdb.umd.min.js"></script>
+</body>
+
+</html>

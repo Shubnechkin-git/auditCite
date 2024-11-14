@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация | Услуги</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="./../mdb/css/mdb.min.css" />
+</head>
+
+<body class="container pt-5">
+    <style>
+        .navbar {
+            border-radius: 20px;
+        }
+
+        footer {
+            border-radius: 20px 20px 0 0;
+        }
+
+        body {
+            background-color: #eeeeee;
+        }
+
+        .service-card {
+            border-radius: 20px;
+            background-color: rgba(160, 155, 155, 0.267);
+        }
+
+        .service-card img {
+            border-radius: 20px 20px 0 0;
+        }
+
+        section {
+            border-radius: 20px;
+        }
+
+        .icon__o {
+            width: 80px;
+            height: 80px;
+            border: 3px solid #ffd53b6e;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .body__o {
+            border: 3px solid #dad7d76e;
+            padding: 12px;
+            background-color: #eeeeee;
+        }
+    </style>
+
+    <!-- Star Rating -->
+    <style>
+        .star-rating {
+            direction: rtl;
+            display: inline-flex;
+            font-size: 2rem;
+            justify-content: center;
+        }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .star-rating label::before {
+            content: '★';
+        }
+
+        .star-rating input:checked~label {
+            color: #ffc107;
+        }
+
+        .star-rating label:hover,
+        .star-rating label:hover~label {
+            color: #ffea00;
+        }
+    </style>
+    <!-- Star Rating -->
+
+    <!-- Navbar -->
+    <nav class="navbar container navbar-expand-lg fixed-top shadow-5-strong navbar-light bg-light mt-3 mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-2" href="./main.html">
+                <i class="fa-brands fa-dochub"></i>
+            </a>
+            <button class="navbar-toggler pe-2" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarCenteredExample" aria-controls="navbarCenteredExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./main.html"><i class="fa-solid fa-house me-1"></i>Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html"><i class="fa-solid fa-circle-question me-1"></i>О
+                            Нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html"><i
+                                class="fa-solid fa-square-phone me-1"></i>Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./order.html"><i
+                                class="fa-solid fa-square-pen me-1"></i>Услуги</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Услуги -->
+    <section class="p-3">
+        <div class="d-flex justify-content-center mt-5 mb-4">
+            <h2><i class="fa-solid fa-clipboard-check me-2"></i>Наши Услуги</h2>
+        </div>
+        <div class="row row-gap-5 column-gap-5 justify-content-center">
+            <!-- Аудит кода -->
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 service-card shadow-5-strong p-0 mb-4">
+                <img src="./assets/audit.png" class="img-fluid" alt="Аудит кода">
+                <div class="p-4 text-center">
+                    <h3>Аудит кода</h3>
+                    <p>Подробный анализ качества и безопасности вашего кода для обеспечения его соответствия стандартам.
+                    </p>
+                    <a class="btn btn-outline-dark btn-sm mt-2" href="#!">Подробнее</a>
+                </div>
+            </div>
+
+            <!-- Документирование -->
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 service-card shadow-5-strong p-0 mb-4">
+                <img src="./assets/Документирование кода.png" class="img-fluid" alt="Документирование">
+                <div class="p-4 text-center">
+                    <h3>Документирование</h3>
+                    <p>Создание и обновление документации для повышения читабельности, прозрачности и поддержки кода.
+                    </p>
+                    <a class="btn btn-outline-dark btn-sm mt-2" href="#!">Подробнее</a>
+                </div>
+            </div>
+            <!-- Услуги -->
+
+            <!-- Оптимизация -->
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 service-card shadow-5-strong p-0 mb-4">
+                <img src="./assets/Оптимизация кода.png" class="img-fluid" alt="Оптимизация">
+                <div class="p-4 text-center">
+                    <h3>Оптимизация</h3>
+                    <p>Повышение производительности вашего программного обеспечения с учетом современных требований.</p>
+                    <a class="btn btn-outline-dark btn-sm mt-2" href="#!">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Услуги -->
+
+    <!-- Форма отзыва -->
+    <section class="shadow-5-strong p-5">
+        <form>
+            <h3 class="text-center mb-5">Оставить отзыв</h3>
+            <!-- Name input -->
+            <div class="row" id="fio">
+                <div class="mb-4 col">
+                    <input type="text" id="form4Example1" class="form-control" />
+                    <label class="form-label" for="form4Example1">Имя</label>
+                </div>
+
+                <!-- Email input -->
+                <div class="mb-4 col">
+                    <input type="email" id="form4Example2" class="form-control" />
+                    <label class="form-label" for="form4Example2">Email</label>
+                </div>
+            </div>
+
+            <!-- Star Rating -->
+            <div class="mb-4">
+                <label class="form-label" for="formRating">Ваша оценка:</label>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="5 stars"></label>
+
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="4 stars"></label>
+
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="3 stars"></label>
+
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="2 stars"></label>
+
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="1 star"></label>
+                </div>
+                <label id="start_total"></label>
+            </div>
+            <!-- Star Rating -->
+
+            <!-- Message input -->
+            <div class="mb-4">
+                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <label class="form-label" for="form4Example3">Текст отзыва</label>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="row">
+                <!-- Submit button -->
+                <div class="col">
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input me-2" id="anon" type="checkbox" value="" id="form4Example4" />
+                        <label class="form-check-label" for="form4Example4">
+                            Отправить анонимно
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- Форма отзыва -->
+
+    <!-- Отзывы -->
+    <section class="shadow-5-strong p-5 mt-5 mb-5" style="background-color: #dad8d8;">
+        <h3 class="text-center mb-5">Отзывы</h3>
+        <div class="comments">
+            <div class="row gap-4 justify-content-around">
+                <!-- Генерируется -->
+                <div
+                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
+                    <!-- Иконка отзыва -->
+                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
+                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
+                            style="color: #FFD43B;"></i>
+                    </div>
+                    <!-- Иконка отзыва -->
+                    <!-- Инициалы юзера -->
+                    <div class="d-flex flex-column">
+                        <h6>Фамилия Имя</h5>
+                            <span>бла бла</span>
+                            <!-- Инициалы юзера -->
+                    </div>
+                </div>
+                <div
+                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
+                    <!-- Иконка отзыва -->
+                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
+                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
+                            style="color: #FFD43B;"></i>
+                    </div>
+                    <!-- Иконка отзыва -->
+                    <!-- Инициалы юзера -->
+                    <div class="d-flex flex-column">
+                        <h6>Фамилия Имя</h5>
+                            <span>бла бла</span>
+                            <!-- Инициалы юзера -->
+                    </div>
+                </div>
+                <div
+                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
+                    <!-- Иконка отзыва -->
+                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
+                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
+                            style="color: #FFD43B;"></i>
+                    </div>
+                    <!-- Иконка отзыва -->
+                    <!-- Инициалы юзера -->
+                    <div class="d-flex flex-column">
+                        <h6>Фамилия Имя</h5>
+                            <span>бла бла</span>
+                            <!-- Инициалы юзера -->
+                    </div>
+                </div>
+                <div
+                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
+                    <!-- Иконка отзыва -->
+                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
+                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
+                            style="color: #FFD43B;"></i>
+                    </div>
+                    <!-- Иконка отзыва -->
+                    <!-- Инициалы юзера -->
+                    <div class="d-flex flex-column">
+                        <h6>Фамилия Имя</h5>
+                            <span>бла бла</span>
+                            <!-- Инициалы юзера -->
+                    </div>
+                </div>
+                <div
+                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
+                    <!-- Иконка отзыва -->
+                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
+                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
+                            style="color: #FFD43B;"></i>
+                    </div>
+                    <!-- Иконка отзыва -->
+                    <!-- Инициалы юзера -->
+                    <div class="d-flex flex-column">
+                        <h6>Фамилия Имя</h5>
+                            <span>бла бла</span>
+                            <!-- Инициалы юзера -->
+                    </div>
+                </div>
+                <!-- Генерируется -->
+            </div>
+    </section>
+    <!-- Отзывы -->
+
+    <!-- Подвал -->
+    <footer class="bg-dark shadow-5-strong text-center text-white mt-5">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="./main.html">Документация</a>
+        </div>
+    </footer>
+    <!-- Услуги -->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="./../mdb/js/mdb.umd.min.js"></script>
+
+    <!-- Анонимная отправка -->
+    <script>
+        document.getElementById("anon").addEventListener('change', (ev) => {
+            fio = document.getElementById("fio");
+            ev.target.checked ? (fio.style.display = "none") : (fio.style.display = "flex");
+        });
+    </script>
+    <!-- Анонимная отправка -->
+
+    <!-- Star Rating -->
+    <script>
+        document.querySelectorAll('.star-rating input').forEach((input) => {
+            input.addEventListener('click', () => {
+                console.log(`Рейтинг: ${input.value} звезд`);
+                document.getElementById("start_total").innerText = input.value;
+            });
+        });
+    </script>
+</body>
+
+</html>
