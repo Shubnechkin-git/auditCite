@@ -1,3 +1,3 @@
 cd backend
-npm igi
+npm i
 npm start
