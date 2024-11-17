@@ -92,7 +92,7 @@
     <!-- Navbar -->
     <nav class="navbar container navbar-expand-lg fixed-top shadow-5-strong navbar-light bg-light mt-3 mb-3">
         <div class="container-fluid">
-            <a class="navbar-brand ms-2" href="./main.html">
+            <a class="navbar-brand ms-2" href="./main">
                 <i class="fa-brands fa-dochub"></i>
             </a>
             <button class="navbar-toggler pe-2" type="button" data-mdb-toggle="collapse"
@@ -103,19 +103,17 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="./main.html"><i class="fa-solid fa-house me-1"></i>Главная</a>
+                        <a class="nav-link" href="./main"><i class="fa-solid fa-house me-1"></i>Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.html"><i class="fa-solid fa-circle-question me-1"></i>О
+                        <a class="nav-link" href="./about"><i class="fa-solid fa-circle-question me-1"></i>О
                             Нас</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.html"><i
-                                class="fa-solid fa-square-phone me-1"></i>Контакты</a>
+                        <a class="nav-link" href="./contact"><i class="fa-solid fa-square-phone me-1"></i>Контакты</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./order.html"><i
-                                class="fa-solid fa-square-pen me-1"></i>Услуги</a>
+                        <a class="nav-link active" href="./order"><i class="fa-solid fa-square-pen me-1"></i>Услуги</a>
                     </li>
                 </ul>
             </div>
@@ -135,7 +133,7 @@
                     <h3>Аудит кода</h3>
                     <p>Подробный анализ качества и безопасности вашего кода для обеспечения его соответствия стандартам.
                     </p>
-                    <a class="btn btn-outline-dark btn-sm mt-2" href="#!">Подробнее</a>
+                    <a class="btn btn-outline-dark btn-sm mt-2" href="#otz">Отзывы</a>
                 </div>
             </div>
 
@@ -146,7 +144,7 @@
                     <h3>Документирование</h3>
                     <p>Создание и обновление документации для повышения читабельности, прозрачности и поддержки кода.
                     </p>
-                    <a class="btn btn-outline-dark btn-sm mt-2" href="#!">Подробнее</a>
+                    <a class="btn btn-outline-dark btn-sm mt-2" href="#otz">Отзывы</a>
                 </div>
             </div>
             <!-- Услуги -->
@@ -157,7 +155,7 @@
                 <div class="p-4 text-center">
                     <h3>Оптимизация</h3>
                     <p>Повышение производительности вашего программного обеспечения с учетом современных требований.</p>
-                    <a class="btn btn-outline-dark btn-sm mt-2" href="#!">Подробнее</a>
+                    <a class="btn btn-outline-dark btn-sm mt-2" href="#otz">Отзывы</a>
                 </div>
             </div>
         </div>
@@ -166,7 +164,7 @@
 
     <!-- Форма отзыва -->
     <section class="shadow-5-strong p-5">
-        <form>
+        <form id="reviewForm">
             <h3 class="text-center mb-5">Оставить отзыв</h3>
             <!-- Name input -->
             <div class="row" id="fio">
@@ -207,7 +205,7 @@
 
             <!-- Message input -->
             <div class="mb-4">
-                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                <textarea class="form-control" maxlength="300" id="form4Example3" rows="4"></textarea>
                 <label class="form-label" for="form4Example3">Текст отзыва</label>
             </div>
 
@@ -227,90 +225,15 @@
                 </div>
             </div>
         </form>
+        <span id="message" class="mt-2 mb-2"></span>
     </section>
     <!-- Форма отзыва -->
 
     <!-- Отзывы -->
-    <section class="shadow-5-strong p-5 mt-5 mb-5" style="background-color: #dad8d8;">
+    <section class="shadow-5-strong p-5 mt-5 mb-5" id="otz" style="background-color: #dad8d8;">
         <h3 class="text-center mb-5">Отзывы</h3>
         <div class="comments">
-            <div class="row gap-4 justify-content-around">
-                <!-- Генерируется -->
-                <div
-                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
-                    <!-- Иконка отзыва -->
-                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
-                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
-                            style="color: #FFD43B;"></i>
-                    </div>
-                    <!-- Иконка отзыва -->
-                    <!-- Инициалы юзера -->
-                    <div class="d-flex flex-column">
-                        <h6>Фамилия Имя</h5>
-                            <span>бла бла</span>
-                            <!-- Инициалы юзера -->
-                    </div>
-                </div>
-                <div
-                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
-                    <!-- Иконка отзыва -->
-                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
-                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
-                            style="color: #FFD43B;"></i>
-                    </div>
-                    <!-- Иконка отзыва -->
-                    <!-- Инициалы юзера -->
-                    <div class="d-flex flex-column">
-                        <h6>Фамилия Имя</h5>
-                            <span>бла бла</span>
-                            <!-- Инициалы юзера -->
-                    </div>
-                </div>
-                <div
-                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
-                    <!-- Иконка отзыва -->
-                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
-                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
-                            style="color: #FFD43B;"></i>
-                    </div>
-                    <!-- Иконка отзыва -->
-                    <!-- Инициалы юзера -->
-                    <div class="d-flex flex-column">
-                        <h6>Фамилия Имя</h5>
-                            <span>бла бла</span>
-                            <!-- Инициалы юзера -->
-                    </div>
-                </div>
-                <div
-                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
-                    <!-- Иконка отзыва -->
-                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
-                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
-                            style="color: #FFD43B;"></i>
-                    </div>
-                    <!-- Иконка отзыва -->
-                    <!-- Инициалы юзера -->
-                    <div class="d-flex flex-column">
-                        <h6>Фамилия Имя</h5>
-                            <span>бла бла</span>
-                            <!-- Инициалы юзера -->
-                    </div>
-                </div>
-                <div
-                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
-                    <!-- Иконка отзыва -->
-                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
-                        <span class="fw-bold fs-3">1</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
-                            style="color: #FFD43B;"></i>
-                    </div>
-                    <!-- Иконка отзыва -->
-                    <!-- Инициалы юзера -->
-                    <div class="d-flex flex-column">
-                        <h6>Фамилия Имя</h5>
-                            <span>бла бла</span>
-                            <!-- Инициалы юзера -->
-                    </div>
-                </div>
+            <div class="row gap-4 justify-content-around" id="reviews">
                 <!-- Генерируется -->
             </div>
     </section>
@@ -336,7 +259,7 @@
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2024 Copyright:
-            <a class="text-white" href="./main.html">Документация</a>
+            <a class="text-white" href="./main">Документация</a>
         </div>
     </footer>
     <!-- Услуги -->
@@ -346,10 +269,12 @@
 
     <!-- Анонимная отправка -->
     <script>
-        document.getElementById("anon").addEventListener('change', (ev) => {
+        let changeVisibleFio = (isVisible = true) => {
             fio = document.getElementById("fio");
-            ev.target.checked ? (fio.style.display = "none") : (fio.style.display = "flex");
-        });
+            isVisible ? (fio.style.display = "flex") : (fio.style.display = "none");
+        }
+
+        document.getElementById("anon").addEventListener('change', (ev) => changeVisibleFio(!ev.target.checked));
     </script>
     <!-- Анонимная отправка -->
 
@@ -362,6 +287,107 @@
             });
         });
     </script>
+
+    <!-- Загрузка отзывов -->
+    <script>
+        let loadReview = () => {
+            fetch('http://localhost:3000/api/reviews')
+                .then((response) => {
+                    if (!response.ok) {
+                        throw new Error('Ошибка при загрузке отзывов');
+                    }
+                    return response.json();
+                })
+                .then((reviews) => {
+                    console.log('Отзывы:', reviews);
+                    document.getElementById('reviews').innerHTML = "";
+                    reviews.forEach(review => document.getElementById('reviews').innerHTML += `
+                <div
+                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 body__o d-flex align-items-stretch rounded-5 shadow-5-strong">
+                    <!-- Иконка отзыва -->
+                    <div class="icon__o me-3 d-flex align-items-center justify-content-center">
+                        <span class="fw-bold fs-3">${review.rating}</span>/5<i class="ms-2 fa-solid fa-star fa-beat"
+                            style="color: #FFD43B;"></i>
+                    </div>
+                    <!-- Иконка отзыва -->
+                    <!-- Инициалы юзера -->
+                    <div class="d-flex flex-column overflow-auto">
+                        <h5>${review.username}</h5>
+                        <span>${review.comment}</span>
+                            <!-- Инициалы юзера -->
+                    </div>
+                </div>  
+                `);
+                })
+                .catch((error) => {
+                    console.error(error);
+                });
+        }
+        loadReview();
+    </script>
+
+    <!-- Создание отзыва -->
+    <script>
+        document.getElementById('reviewForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            // Получение данных из формы
+            const username = document.getElementById('form4Example1').value;
+            const email = document.getElementById('form4Example2').value;
+            const rating = document.querySelector('input[name="rating"]:checked')?.value;
+            const comment = document.getElementById('form4Example3').value;
+            const anonymous = document.getElementById('anon').checked;
+            const message = document.getElementById('message');
+            // Валидация данных
+            if ((!anonymous && !(email || username) || !rating)) {
+                message.innerText = 'Пожалуйста, заполните все обязательные поля!';
+                message.classList.add("text-danger");
+                message.classList.remove("text-success");
+                return;
+            }
+
+            // Формирование объекта данных
+            const reviewData = {
+                username,
+                email,
+                rating,
+                comment,
+            };
+            try {
+                // Отправка данных на сервер
+                const response = await fetch('/api/reviews/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(reviewData),
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    message.innerText = result.message;
+                    message.classList.add("text-success");
+                    message.classList.remove("text-danger");
+                    // Очистка формы
+                    document.getElementById('reviewForm').reset();
+                    changeVisibleFio(true);
+                    if (comment.lenght > 0) loadReview();
+                    document.getElementById("start_total").innerText = "";
+                } else {
+                    const error = await response.json();
+                    message.innerText = (error.error || 'Не удалось отправить отзыв');
+                    message.classList.add("text-danger");
+                    message.classList.remove("text-success");
+                }
+            } catch (error) {
+                console.error('Ошибка при отправке отзыва:', error);
+                message.innerText = 'Произошла ошибка. Попробуйте снова.';
+                message.classList.add("text-danger");
+                message.classList.remove("text-success");
+            }
+        });
+    </script>
+
 </body>
 
 </html>
