@@ -13,7 +13,6 @@ const db = mysql.createConnection({
 
 // Маршрут для получения отзывов
 router.get('/', (req, res) => {
-    sendMail("Danil", "danilka-shubnikov@mail.ru");
     const sql = 'SELECT username, rating, comment FROM reviews WHERE comment NOT LIKE "" ORDER BY created_at DESC';
     db.connect((err) => {
         if (err) {
